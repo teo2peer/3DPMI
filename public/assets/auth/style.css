@@ -1,0 +1,139 @@
+.login-background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  padding: 0px;
+  background-color: #212121;
+}
+
+@media only screen and (min-width : 601px) {
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: inherit;
+    z-index: 0;
+  }
+}
+@media only screen and (max-width : 600px) {
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: inherit;
+    z-index: 0;
+  }
+
+  .login-logo {
+    z-index: 3;
+    max-width: 100%;
+    min-width: 194px;
+    width: 10%;
+    height: auto;
+  }
+}
+@media only screen and (min-width : 601px) and (max-width : 992px) {
+  .login-logo {
+    z-index: 3;
+    max-width: 100%;
+    min-width: 284px;
+    width: 10%;
+    height: auto;
+  }
+}
+@media only screen and (min-width : 993px) {
+  .login-logo {
+    z-index: 3;
+    max-width: 100%;
+    min-width: 300px;
+    width: 10%;
+    height: auto;
+  }
+}
+login-transitions {
+  transition: all 1s;
+}
+
+@media only screen and (min-width : 601px) {
+  .login-logo.animate {
+    position: absolute;
+    transform: translateX(0%);
+    animation-fill-mode: forwards;
+    animation-name: login-welcome-logo;
+    animation-delay: 0.5s;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes login-welcome-logo {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  .login-inputs.animate {
+    position: absolute;
+    transform: translateX(0%) scaleX(0.6);
+    animation-fill-mode: forwards;
+    animation-name: login-welcome-inputs;
+    animation-delay: 0.5s;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes login-welcome-inputs {
+    0% {
+      transform: translateX(0%) scaleX(0.6);
+    }
+    100% {
+      transform: translateX(50%) scaleX(1);
+    }
+  }
+  .login-logo.load {
+    animation-fill-mode: forwards;
+    animation-name: login-logo-load;
+    animation-delay: 0s;
+    animation-duration: 0.5s;
+    transform: translateX(50%);
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes login-logo-load {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(40%);
+    }
+  }
+  .login-inputs.load {
+    animation-fill-mode: forwards;
+    animation-name: login-inputs-load;
+    animation-delay: 0s;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes login-inputs-load {
+    0% {
+      transform: translateX(0%) scaleX(1);
+    }
+    100% {
+      transform: translateX(-50%) scaleX(0.5);
+    }
+  }
+}
+.login-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: inherit;
+  z-index: 1;
+}
