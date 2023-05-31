@@ -1,6 +1,6 @@
 # 3DPMI (3D Printing Manager & Inventory)
 
-![3DPMI Logo](https://teodin.com/assets/content/3DPMI/logo/svg/logo-color.svg)
+![3DPMI Logo](https://teodin.com/assets/content/3DPMI/logo/png/logo-no-background-medium.png)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
