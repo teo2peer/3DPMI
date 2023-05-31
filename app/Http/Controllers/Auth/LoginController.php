@@ -58,7 +58,7 @@ class LoginController extends Controller
             return redirect('/login');
         }
         // only allow people with @company.com to login
-        if(explode("@", $user->email)[1] !== 'uji.es'){
+        if(explode("@", $user->email)[1] !== 'gmail.com'){
             return redirect()->to('/errorNotAllowed');
         }
         // check if they're an existing user
