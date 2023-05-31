@@ -17,4 +17,4 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
-Route::post('/cura/upload', [App\Http\Controllers\DashboardController::class, 'curaUpload'])->name('cura.upload'); 
+Route::post('/cura/upload', [App\Http\Controllers\Dashboard\ImpresionesController::class, 'cura_upload'])->name('cura.upload'); 
